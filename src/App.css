@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+.page {
+  padding: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.createPost{
+  display: flex;
+  justify-content: flex-end;
+  width: 450px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 3px;
+  margin: 0 auto 15px;
+  padding: 7.5px 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+  height: 25px;
+  font-size: 14px;
+  background: #4469ae;
+  color: #ffffff;
+  line-height: 25px;
+  padding: 0 4px;
+  text-decoration: none;
+  border-radius: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post{
+  width: 450px;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 20px 15px;
+  margin: 0 auto 15px;
+}
+
+.post p{
+  margin: 0;
+}
+
+.post a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.post__header{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.post__header-img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #cccccc;
+}
+
+.post__header-author{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.post__header-author-name{
+  color: #3b5a94;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post__header-author-time{
+  color: #646971;
+  font-weight: 600;
+}
+
+.post__header-author-time span{
+  font-weight: normal;
+}
+
+.post__body{
+  font-size: 16px;
+  color: #000000;
+}
+
+.container{
+  width: 450px;
+  margin: 0 auto;
+}
+
+.newPost{
+  width: 100%;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 15px 15px;
+}
+
+.close{
+  font-size: 18px;
+  font-weight: 700;
+  color: #c7cad0;
+  width: max-content;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.close a{
+ text-decoration: none;
+ color: inherit;
+}
+
+.newPost hr{
+  border: 0.5px solid #c7cad0;
+}
+
+.newPost input{
+  border: none;
+  outline-color: none;
+  width: 100%;
+  height: 60px;
+}
+
+button.btn{
+  display: block;
+  border: none;
+  padding: 0 15px;
+  margin: 15px 0 0 auto;
+  cursor: pointer;
+}
+
+.post__buttons{
+  width: max-content;
+  margin-left: auto;
+  display: flex;
+}
+
+.post__buttons-btn-red.btn{
+  background: #b04547;
+  margin-top: 0;
+}
+
+.post__buttons-btn-blue.btn{
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.hidden {
+  display: none;
 }
